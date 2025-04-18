@@ -24,7 +24,43 @@
 				</div>
 			</div>
 		</header>
-		<main></main>
+		<main>
+			<div class="main-container">
+				<div class="form-div">
+					<form id="info" action="">
+						<legend>Informacije</legend>
+						<div class="user-input">
+							<label for="mail">Email *</label>
+							<input type="email" id="mail" required />
+							<label for="title">Naslov *</label>
+							<input type="text" id="title" required />
+							<label for="text-area">Tekst</label>
+							<textarea name="text-area" id="text-area"></textarea>
+						</div>
+						<div class="attachments">
+							<label for="pictures">Slike:</label>
+							<input
+								type="file"
+								id="pictures"
+								accept="image/png, image/jpeg"
+								multiple
+							/>
+
+							<label for="files">Fajlovi:</label>
+							<input
+								type="file"
+								id="files"
+								accept="application/pdf, application/docx"
+								multiple
+							/>
+						</div>
+						<div class="button-div">
+							<button id="submit-button" class="button">Pošalji</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</main>
 		<footer>
 			<p>
 				Copyright © 2025 Učasoft | ucasoft.rs. Agencija za edukaciju i usluge
