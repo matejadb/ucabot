@@ -56,14 +56,13 @@ main {
 	justify-content: center;
 }
 
-.main-container {
-	max-width: 1350px;
-	margin: 0 auto;
+form {
+	padding: 10px;
 }
 
-form {
-	display: flex;
-	flex-direction: column;
+form h1 {
+	color: #ffffff;
+	margin-bottom: 20px;
 }
 
 .user-input {
@@ -71,51 +70,44 @@ form {
 	flex-direction: column;
 }
 
-.attachments {
-	display: flex;
-	flex-direction: column;
-	gap: 5px;
-}
-
-fieldset {
-	border: 2px solid #61ce70;
-}
-
-h1 {
-	margin-bottom: 1rem;
-	color: #ffffff;
-}
-
 label {
 	font-weight: bold;
 	color: #ffffff;
+	font-size: 1.3rem;
 }
 
-input[type='email'],
-input[type='text'],
-textarea,
-input[type='file'] {
+input,
+textarea {
 	padding: 0.5rem;
-	font-size: 1rem;
 	border: 1px solid #ccc;
 	border-radius: 8px;
 	width: 100%;
-	box-sizing: border-box;
 	margin-bottom: 20px;
 }
 
 textarea {
 	height: 300px;
-	width: 750px;
-	display: flex;
-	resize: vertical;
+}
+
+input::file-selector-button {
+	padding: 10px 10px;
+	border-radius: 5px;
+	color: #ffffff;
+	background-color: #61ce70;
+	text-decoration: none;
+	font-size: 15px;
+	border: none;
+}
+
+input::file-selector-button:hover {
+	cursor: pointer;
+	background-color: #ff6b00;
 }
 
 .button-div {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin-top: 15px;
 }
 
 #submit-button {
