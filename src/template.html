@@ -27,21 +27,26 @@
 		<main>
 			<div class="main-container">
 				<div class="form-div">
-					<form id="info" action="">
+					<form id="info" action="" method="post">
 						<h1>Informacije</h1>
 						<div class="user-input">
 							<label for="mail">Email *</label>
-							<input type="email" id="mail" required />
+							<input type="email" id="mail" name="mail" required />
 							<label for="title">Naslov *</label>
-							<input type="text" id="title" required />
+							<input type="text" id="title" name="title" required />
 							<label for="text-area">Tekst</label>
-							<textarea name="text-area" id="text-area"></textarea>
+							<textarea
+								name="text-area"
+								id="text-area"
+								name="text-area"
+							></textarea>
 						</div>
 						<div class="attachments">
 							<label for="pictures">Slike:</label>
 							<input
 								type="file"
 								id="pictures"
+								name="pictures"
 								accept="image/png, image/jpeg"
 								multiple
 							/>
@@ -50,11 +55,17 @@
 								type="file"
 								id="files"
 								accept="application/pdf, application/docx"
+								name="files"
 								multiple
 							/>
 						</div>
 						<div class="button-div">
-							<button id="submit-button" class="button">Pošalji</button>
+							<input
+								type="submit"
+								id="submit-button"
+								class="button"
+								value="Pošalji"
+							/>
 						</div>
 					</form>
 				</div>

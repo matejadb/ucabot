@@ -112,6 +112,7 @@ input::file-selector-button:hover {
 
 #submit-button {
 	border: none;
+	width: 150px;
 }
 
 /* Footer */
