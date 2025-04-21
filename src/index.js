@@ -7,8 +7,3 @@ const textInput = document.getElementById('text-area');
 const pictureInput = document.getElementById('pictures');
 const fileInput = document.getElementById('files');
 const submitButton = document.getElementById('submit-button');
-
-submitButton.addEventListener('click', (e) => {
-	e.preventDefault();
-	console.log(mailInput.value, titleInput.value, textInput.value);
-});
